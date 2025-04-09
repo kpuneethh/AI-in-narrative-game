@@ -1,0 +1,32 @@
+{
+    "Question" : "You are a scientist at an underground illegal tech facility working on a time machine. As you near its completion, the severity and potential impact of what can be done with it only becomes more apparent among everybody in the facility. On the day its complete, youre brought to your boss office and he tells you that youre fired. The facility doesnt need you anymore, as you were nothing but a means to building the time machine from the beginning, and now its complete. You wouldnt be able to complain to the government even if you wanted to as you were working in an illegal organization. You dont even know if youll be alive after this because they probably dont want you helping someone else build another time machine. As youre still in your boss office, an armed guard walks in. You were right: theyre about to kill you. You need to think fast now!",
+    "item_pickup" : "",
+    "location" : "Question1",
+    "losing" : "",
+    "options" : {
+        "1" : {
+            "text" : "Fight or aggress against them",
+            "next_location" : "Question1_1_0",
+            "type" : "losing",
+            "item_needed" : ""
+        },
+        "2" : {
+            "text" : "Make a run or escape",
+            "next_location" : "Question1_2_0",
+            "type" : "losing",
+            "item_needed" : ""
+        },
+        "3" : {
+            "text" : "Beg, plead, or act nice with them",
+            "next_location" : "Question1_3_0",
+            "type" : "losing",
+            "item_needed" : ""
+        },
+        "4" : {
+            "text" : "Threaten, negotiate, or fool them",
+            "next_location" : "Question1_4_0",
+            "type" : "losing",
+            "item_needed" : ""
+        }
+    }
+}

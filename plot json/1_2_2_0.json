@@ -1,6 +1,34 @@
 {
 "Question" : "In the middle of your endeavor, a massive explosion occurs in the facility. You dont know how this happened, but now with everyone distracted, you might be able to do things you previously werent able to.",
-"1" : "Keep pursuing escape in any way or trying to get out or finding transportation (end)",
+"1" : "Keep pursuing escape in any way or trying to get out or finding transportation (key=laser_gun)",
 "2" : "Try to explore the facility or confront them or stay hidden or concealed or safe - anything thats halting direct escape for now (continues)",
-"location" : "Question1_2_2_0"
+"location" : "Question1_2_2_0",
+"item" : ""
+}
+
+{
+    "Question" : "",
+    "item_pickup" : "",
+    "location" : "",
+    "losing" : "",
+    "options" : {
+        "1" : {
+            "text" : "",
+            "next_location" : "",
+            "type" : "winning/losing",
+            "item_needed" : ""
+        },
+        "2" : {
+            "text" : "",
+            "next_location" : "",
+            "type" : "winning/losing",
+            "item_needed" : ""
+        },
+        "3" : {
+            "text" : "",
+            "next_location" : "",
+            "type" : "winning/losing",
+            "item_needed" : ""
+        }
+    }
 }
