@@ -1,0 +1,6 @@
+{
+    "Question" : "You get to the time machine room, but its locked. There are two kinds of people: the ones that keep it neat, and the ones that break things open. Which are you?",
+    "1" : "Search for the key instead of breaking the door",
+    "2" : "Break the door open and get in",
+    "location" : "Question1_2_2_2_1_0"
+}

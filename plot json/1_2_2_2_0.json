@@ -1,0 +1,7 @@
+{
+    "Question" : "You decide to expore the facility. Now you need to decide where to go or where to search. You could go to the time machine. No one knows if its safe right now, but youre the one to decide!",
+    "1" : "Go to the time machine",
+    "2" : "Find transportation elsewhere or investigate the explosion",
+    "3" : "Go to any kind of storage place that has supplies",
+    "location" : "Question1_2_2_2_0"
+}

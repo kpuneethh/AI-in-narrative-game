@@ -1,0 +1,6 @@
+{
+"Question" : "In the middle of your endeavor, a massive explosion occurs in the facility. You dont know how this happened, but now with everyone distracted, you might be able to do things you previously werent able to.",
+"1" : "Keep pursuing escape in any way or trying to get out or finding transportation (end)",
+"2" : "Try to explore the facility or confront them or stay hidden or concealed or safe - anything thats halting direct escape for now (continues)",
+"location" : "Question1_2_2_0"
+}
