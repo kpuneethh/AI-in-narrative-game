@@ -12,15 +12,6 @@ logger.addHandler(stream_handler)
 DEFAULT_DEBUG_VALUE = True
 # Set your OpenAI API key
 openai.api_key = "***REMOVED***"  # Replace with your actual key
-
-FILE_LOCATIONS = {
-"Question1" : r"C:\\Users\punco\OneDrive\Desktop\plot json\story.json",
-"Question1_2_0" : r"C:\\Users\punco\OneDrive\Desktop\plot json\1_2_0.json",
-"Question1_4_0" : r"C:\\Users\punco\OneDrive\Desktop\plot json\1_4_0.json",
-"Question1_2_2_0" : r"C:\\Users\punco\OneDrive\Desktop\plot json\1_2_2_0.json",
-"Question1_2_2_2_0" : r"C:\\Users\punco\OneDrive\Desktop\plot json\1_2_2_2_0.json",
-"Question1_2_2_2_1_0" : r"C:\\Users\punco\OneDrive\Desktop\plot json\1_2_2_2_1_0.json"
-}
  
 # TODO Research how you'll incorporate visuals - DallE for preset images, & emoji-system - in progress
 # TODO item related functions - in progress

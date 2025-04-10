@@ -2,6 +2,7 @@ import json
 import openai
 import sys
 import logging
+import os
 
 # PyWebIO
 from pywebio.input import input, select
@@ -28,19 +29,43 @@ logger.addHandler(stream_handler)
 # Set your OpenAI API key
 openai.api_key = "***REMOVED***"  # Replace with your actual key
 
-FILE_LOCATIONS = {
-"Question1" : r"C:\\Users\punco\OneDrive\Desktop\plot json\story.json",
-"Question1_2_0" : r"C:\\Users\punco\OneDrive\Desktop\plot json\1_2_0.json",
-"Question1_4_0" : r"C:\\Users\punco\OneDrive\Desktop\plot json\1_4_0.json",
-"Question1_2_2_0" : r"C:\\Users\punco\OneDrive\Desktop\plot json\1_2_2_0.json",
-"Question1_2_2_2_0" : r"C:\\Users\punco\OneDrive\Desktop\plot json\1_2_2_2_0.json",
-"Question1_2_2_2_1_0" : r"C:\\Users\punco\OneDrive\Desktop\plot json\1_2_2_2_1_0.json"
-}
+# FILE_LOCATIONS = {
+# "Question1_0    " : r"C:\\Users\punco\OneDrive\Desktop\plot json\story.json",
+# "Question1_2_0" : r"C:\\Users\punco\OneDrive\Desktop\plot json\1_2_0.json",
+# "Question1_4_0" : r"C:\\Users\punco\OneDrive\Desktop\plot json\1_4_0.json",
+# "Question1_2_2_0" : r"C:\\Users\punco\OneDrive\Desktop\plot json\1_2_2_0.json",
+# "Question1_2_2_2_0" : r"C:\\Users\punco\OneDrive\Desktop\plot json\1_2_2_2_0.json",
+# "Question1_2_2_2_1_0" : r"C:\\Users\punco\OneDrive\Desktop\plot json\1_2_2_2_1_0.json"
+# }
+
+# Dynamically create a file_locations dict to store questions and their file locations
+FILE_LOCATIONS = {}
+target_folder = "AI-in-narrative-game"
+json_subfolder = "plot json"
+start_dir = os.path.expanduser("~")
+
+for root, dirs, files in os.walk(start_dir):
+    if os.path.basename(root) == target_folder:
+        potential_json_folder = os.path.join(root, json_subfolder)
+        if os.path.isdir(potential_json_folder):
+            for filename in os.listdir(potential_json_folder):
+                if filename.endswith(".json"):
+                    full_path = os.path.join(potential_json_folder, filename)
+                    try:
+                        with open(full_path, "r", encoding="utf-8") as f:
+                            data = json.load(f)
+                            location_value = data["location"]  # updated key
+                            #print(f"{full_path}: {location_value}")
+                            FILE_LOCATIONS[location_value] = f"{full_path}"
+                    except Exception as e:
+                        print(f"Error reading {full_path}: {e}")
+
+
 
 # Pictures
-Question1pic = 'C:\\Users\punco\OneDrive\Desktop\programming\question1pic.png'
-Question1_2_0pic = 'C:\\Users\punco\OneDrive\Desktop\programming\question1_2_0pic.png'
-Question1_4_0pic = 'C:\\Users\punco\OneDrive\Desktop\programming\question1_4_0pic.jpg'
+# Question1pic = 'C:\\Users\punco\OneDrive\Desktop\programming\question1pic.png'
+# Question1_2_0pic = 'C:\\Users\punco\OneDrive\Desktop\programming\question1_2_0pic.png'
+# Question1_4_0pic = 'C:\\Users\punco\OneDrive\Desktop\programming\question1_4_0pic.jpg'
 
 def game():
 

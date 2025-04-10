@@ -12,7 +12,7 @@
         },
         "2" : {
             "text" : "Try to stay hidden or concealed or safe - halting direct escape for now",
-            "next_location" : "",
+            "next_location" : "Question1_2_2_0",
             "type" : "winning",
             "item_needed" : ""
         }
