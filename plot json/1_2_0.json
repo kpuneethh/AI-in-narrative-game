@@ -1,33 +1,19 @@
 {
-"Question" : "You make a run for the hallway. Now youve done it. It seems you havent been killed yet. However, that might not be the case for much longer. This facility is in an extremely isolated location: theres no way you could escape to safety just by yourself, as youd die of the extreme cold outside.",
-"1" : "Keep pursuing escape in any way or trying to get out or finding transportation (end)",
-"2" : "Try to stay hidden or concealed or safe - halting direct escape for now (continues)",
-"location" : "Question1_2_0",
-"item" : "laser_gun"
-}
-
-{
-    "Question" : "",
-    "item_pickup" : "",
-    "location" : "",
+    "Question" : "You make a run for the hallway. Now youve done it. It seems you havent been killed yet. However, that might not be the case for much longer. This facility is in an extremely isolated location: theres no way you could escape to safety just by yourself, as youd die of the extreme cold outside.",
+    "item_pickup" : "laser_gun",
+    "location" : "Question1_2_0",
     "losing" : "",
     "options" : {
         "1" : {
-            "text" : "",
+            "text" : "Keep pursuing escape in any way or trying to get out or finding transportation",
             "next_location" : "",
-            "type" : "winning/losing",
+            "type" : "losing",
             "item_needed" : ""
         },
         "2" : {
-            "text" : "",
+            "text" : "Try to stay hidden or concealed or safe - halting direct escape for now",
             "next_location" : "",
-            "type" : "winning/losing",
-            "item_needed" : ""
-        },
-        "3" : {
-            "text" : "",
-            "next_location" : "",
-            "type" : "winning/losing",
+            "type" : "winning",
             "item_needed" : ""
         }
     }

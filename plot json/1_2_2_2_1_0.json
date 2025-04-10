@@ -1,34 +1,25 @@
 {
     "Question" : "You get to the time machine room, but its locked. There are two kinds of people: the ones that keep it neat, and the ones that break things open. Which are you?",
-    "1" : "use the key instead to open the door (key=facility_key)",
-    "2" : "Break the door open and get in (end) (key=laser_gun)",
-    "3" : "find the key",
-    "location" : "Question1_2_2_2_1_0",
-    "item" : ""
-}
-
-{
-    "Question" : "",
     "item_pickup" : "",
-    "location" : "",
+    "location" : "Question1_2_2_2_1_0",
     "losing" : "",
     "options" : {
         "1" : {
-            "text" : "",
+            "text" : "use the key instead to open the door",
             "next_location" : "",
-            "type" : "winning/losing",
-            "item_needed" : ""
+            "type" : "winning",
+            "item_needed" : "facility_key"
         },
         "2" : {
-            "text" : "",
+            "text" : "Break the door open and get in",
             "next_location" : "",
-            "type" : "winning/losing",
-            "item_needed" : ""
+            "type" : "losing",
+            "item_needed" : "laser_gun"
         },
         "3" : {
-            "text" : "",
+            "text" : "find the key",
             "next_location" : "",
-            "type" : "winning/losing",
+            "type" : "winning",
             "item_needed" : ""
         }
     }

@@ -1,8 +1,8 @@
 {
     "Question" : "",
     "item_pickup" : "",
-    "location" : "Question1_2_2_2_3_0",
-    "losing" : "",
+    "location" : "Question1_2_2_2_2_0",
+    "losing" : "y",
     "options" : {
         "1" : {
             "text" : "",

@@ -1,34 +1,25 @@
 {
     "Question" : "You decide to expore the facility. Now you need to decide where to go or where to search. You could go to the time machine. No one knows if its safe right now, but youre the one to decide!",
-    "1" : "Go to the time machine (continues)",
-    "2" : "Find transportation elsewhere or investigate the explosion (end) (key=laser_gun)",
-    "3" : "Go to any kind of storage place that has supplies (continues)",
-    "location" : "Question1_2_2_2_0",
-    "item" : ""
-}
-
-{
-    "Question" : "",
     "item_pickup" : "",
-    "location" : "",
+    "location" : "Question1_2_2_2_0",
     "losing" : "",
     "options" : {
         "1" : {
-            "text" : "",
-            "next_location" : "",
-            "type" : "winning/losing",
+            "text" : "Go to the time machine",
+            "next_location" : "1_2_2_2_1_0",
+            "type" : "winning",
             "item_needed" : ""
         },
         "2" : {
-            "text" : "",
-            "next_location" : "",
-            "type" : "winning/losing",
-            "item_needed" : ""
+            "text" : "Find transportation elsewhere or investigate the explosion",
+            "next_location" : "1_2_2_2_2_0",
+            "type" : "losing",
+            "item_needed" : "laser_gun"
         },
         "3" : {
-            "text" : "",
-            "next_location" : "",
-            "type" : "winning/losing",
+            "text" : "Go to any kind of storage place that has supplies",
+            "next_location" : "1_2_2_2_3_0",
+            "type" : "winning",
             "item_needed" : ""
         }
     }

@@ -1,25 +1,13 @@
 {
     "Question" : "",
     "item_pickup" : "",
-    "location" : "",
-    "losing" : "",
+    "location" : "Question1_1_0",
+    "losing" : "y",
     "options" : {
         "1" : {
             "text" : "",
             "next_location" : "",
-            "type" : "winning/losing",
-            "item_needed" : ""
-        },
-        "2" : {
-            "text" : "",
-            "next_location" : "",
-            "type" : "winning/losing",
-            "item_needed" : ""
-        },
-        "3" : {
-            "text" : "",
-            "next_location" : "",
-            "type" : "winning/losing",
+            "type" : "winning",
             "item_needed" : ""
         }
     }

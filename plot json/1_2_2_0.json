@@ -1,33 +1,19 @@
 {
-"Question" : "In the middle of your endeavor, a massive explosion occurs in the facility. You dont know how this happened, but now with everyone distracted, you might be able to do things you previously werent able to.",
-"1" : "Keep pursuing escape in any way or trying to get out or finding transportation (key=laser_gun)",
-"2" : "Try to explore the facility or confront them or stay hidden or concealed or safe - anything thats halting direct escape for now (continues)",
-"location" : "Question1_2_2_0",
-"item" : ""
-}
-
-{
-    "Question" : "",
+    "Question" : "In the middle of your endeavor, a massive explosion occurs in the facility. You dont know how this happened, but now with everyone distracted, you might be able to do things you previously werent able to",
     "item_pickup" : "",
-    "location" : "",
+    "location" : "Question1_2_2_0",
     "losing" : "",
     "options" : {
         "1" : {
-            "text" : "",
-            "next_location" : "",
-            "type" : "winning/losing",
-            "item_needed" : ""
+            "text" : "Keep pursuing escape in any way or trying to get out or finding transportation",
+            "next_location" : "Question1_2_2_1_0",
+            "type" : "losing",
+            "item_needed" : "laser_gun"
         },
         "2" : {
-            "text" : "",
-            "next_location" : "",
-            "type" : "winning/losing",
-            "item_needed" : ""
-        },
-        "3" : {
-            "text" : "",
-            "next_location" : "",
-            "type" : "winning/losing",
+            "text" : "Try to explore the facility or confront them or stay hidden or concealed or safe - anything thats halting direct escape for now",
+            "next_location" : "Question1_2_2_2_0",
+            "type" : "winning",
             "item_needed" : ""
         }
     }
