@@ -1,7 +1,11 @@
 import json
 from openai import OpenAI
+import os
 
-client = OpenAI(api_key="***REMOVED***")
+apikey = os.getenv("OPENAI_API_KEY") # Replace with your actual key
+
+
+client = OpenAI(api_key=apikey) # Replace with your actual key
 import sys
 import logging
 
@@ -12,8 +16,6 @@ stream_handler.setLevel(logging.INFO)
 logger.addHandler(stream_handler)
 
 DEFAULT_DEBUG_VALUE = True
-# Set your OpenAI API key
-  # Replace with your actual key
 
 # TODO How the items interact with the story --> (key=item) in text
 # TODO game sidebar
