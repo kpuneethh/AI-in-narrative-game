@@ -1,7 +1,7 @@
 import json
 from openai import OpenAI
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="***REMOVED***")
 import sys
 import logging
 
@@ -15,14 +15,9 @@ DEFAULT_DEBUG_VALUE = True
 # Set your OpenAI API key
   # Replace with your actual key
 
-# TODO Research how you'll incorporate visuals - DallE for preset images, & emoji-system - in progress
-# TODO item related functions - in progress
 # TODO How the items interact with the story --> (key=item) in text
 # TODO game sidebar
 # TODO multiple options that can lead to the same story point - losing option leads to another file that forces the user to the next story path while losing health
-# TODO structuring -> use better format for json files to handle items, health, and doesn't require QuestionFlow (Don't mix code and story text) 
-        # -> start by identifying places where the code and text are 'merging' and then fix those
-# Setup github and code for it to work on different devices
 # TODO add api key to environment and learn how to load it from environment
 
 def story_points_dictionary(json_path: str, debug: bool = DEFAULT_DEBUG_VALUE):
