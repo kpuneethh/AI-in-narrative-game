@@ -6,7 +6,7 @@
     "options" : {
         "1" : {
             "text" : "Keep pursuing escape in any way or trying to get out or finding transportation",
-            "next_location" : "",
+            "next_location" : "Question1_2_1_0",
             "type" : "losing",
             "item_needed" : ""
         },

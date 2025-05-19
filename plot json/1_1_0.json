@@ -1,12 +1,12 @@
 {
-    "Question" : "",
+    "Question" : "Trying to aggress against them backfires against you, with the guard landing a painful strike in your stomach as a warning.",
     "item_pickup" : "",
     "location" : "Question1_1_0",
     "losing" : "y",
     "options" : {
         "1" : {
             "text" : "",
-            "next_location" : "",
+            "next_location" : "Question1_2_0",
             "type" : "winning",
             "item_needed" : ""
         }

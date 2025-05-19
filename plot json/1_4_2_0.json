@@ -1,12 +1,12 @@
 {
-    "Question" : "The fires from the explosion spread and you get partially burned.",
+    "Question" : "Threats don't work on them, and you get shot in the foot.",
     "item_pickup" : "",
-    "location" : "Question1_2_2_2_2_0",
+    "location" : "Question1_4_2_0",
     "losing" : "y",
     "options" : {
         "1" : {
             "text" : "",
-            "next_location" : "Question1_2_2_2_3_0",
+            "next_location" : "Question1_2_2_0",
             "type" : "winning",
             "item_needed" : ""
         }

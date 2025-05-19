@@ -1,12 +1,12 @@
 {
-    "Question" : "",
+    "Question" : "Pleading was never going to work to begin with, the guard punches you and you fall to the ground. He points his gun at you",
     "item_pickup" : "",
     "location" : "Question1_3_0",
     "losing" : "y",
     "options" : {
         "1" : {
             "text" : "",
-            "next_location" : "",
+            "next_location" : "Question1_4_0",
             "type" : "winning",
             "item_needed" : ""
         }

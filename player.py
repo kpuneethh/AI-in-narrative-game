@@ -2,7 +2,7 @@ class Player:
     def __init__(self, health = 100, max_items = 2):
         self.max_items = max_items
         self.health = health
-        self.inventory = {"stone": 1, "laser_gun": 0, "facility_key": 0, "rewinding_watch": 0}
+        self.inventory = {"stone": 1, "laser_gun": 0, "facility_key": 0}
 
     # Health Functions
     def lose_health(self, health_to_lose):

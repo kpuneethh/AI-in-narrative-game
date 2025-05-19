@@ -3,9 +3,8 @@ from openai import OpenAI
 import os
 
 apikey = os.getenv("OPENAI_API_KEY") # Replace with your actual key
-
-
 client = OpenAI(api_key=apikey) # Replace with your actual key
+
 import sys
 import logging
 
@@ -17,10 +16,10 @@ logger.addHandler(stream_handler)
 
 DEFAULT_DEBUG_VALUE = True
 
-# TODO How the items interact with the story --> (key=item) in text
-# TODO game sidebar
-# TODO multiple options that can lead to the same story point - losing option leads to another file that forces the user to the next story path while losing health
-# TODO add api key to environment and learn how to load it from environment
+# TODO have play testers
+# TODO add picture in README
+# TODO IMPORTANT FOR DISPLAY BOARD: A few screenshots/demo of data collection with chatgpt for the game
+# TODO Better introduction -> Can be used when speaking about display board
 
 def story_points_dictionary(json_path: str, debug: bool = DEFAULT_DEBUG_VALUE):
     """returns dictionary of story points"""
@@ -48,7 +47,7 @@ def ask_chatGPT(ai_prompt, user_response, debug: bool = DEFAULT_DEBUG_VALUE):
                     "The user responds to open-ended prompts, and you have access to a set of hidden options for each decision point in the story. "
                     "Your job is to analyze the user's response, compare it with the hidden options, and select the most similar option based on meaning and intent. "
                     "Once you've chosen the closest option, RESPOND WITH ONLY A SINGLE CHARACTER, which should the NUMBER of that option in the list of choices. "
-                    "Respond with the character 'e' if the user's answer is jibberish. Even if the user answer is a little different from the choices, dont return 'e'"
+                    "Tolerate violence. Respond with the character 'e' if the user's answer is jibberish. Don't return 'e' if the response is sensical."
                 )
             },
             {"role": "assistant", "content": ai_prompt},
@@ -193,6 +192,24 @@ def generate_hint(user_response: str, story_dictionary: dict, item_to_use: str, 
         messages=messages,
         temperature=1.0,
         max_tokens=100
+    )
+
+    return response.choices[0].message.content.strip()
+
+def recite_inventory(item_list : str):
+    """Returns items in the user's inventory"""
+
+    messages = [
+        {"role": "system", "content": "You are an interactive storytelling assistant helping with the player's inventory"},
+        {"role": "assistant", "content": "Youre given a list of items with numbers following each which corresponds to the amount of that item. Return a nicely rephrased version AS SHORT AS POSSIBLE that creatively reads out the items that the player has in the inventory. IF YOU'RE GIVEN NO ITEMS LISTED, SAY THE INVENTORY IS EMPTY"},
+        {"role": "user", "content": item_list}
+    ]
+
+    response = client.chat.completions.create(
+        model="gpt-4o-mini-2024-07-18",
+        messages=messages,
+        temperature= 0.5,
+        max_tokens=50
     )
 
     return response.choices[0].message.content.strip()

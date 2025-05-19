@@ -1,0 +1,14 @@
+{
+    "Question" : "Trying to find an escape backfires as the guards find you trying to escape, and you get shot in the leg.",
+    "item_pickup" : "",
+    "location" : "Question1_2_1_0",
+    "losing" : "y",
+    "options" : {
+        "1" : {
+            "text" : "",
+            "next_location" : "Question1_2_2_0",
+            "type" : "winning",
+            "item_needed" : ""
+        }
+    }
+}

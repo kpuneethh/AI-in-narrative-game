@@ -1,0 +1,14 @@
+{
+    "Question" : "Trying to break the door open ended up being too loud and bringing attention from the guards. You enter gunfire with the guards.",
+    "item_pickup" : "",
+    "location" : "Question1_2_2_2_1_2_0",
+    "losing" : "y",
+    "options" : {
+        "1" : {
+            "text" : "",
+            "next_location" : "WON",
+            "type" : "winning",
+            "item_needed" : ""
+        }
+    }
+}

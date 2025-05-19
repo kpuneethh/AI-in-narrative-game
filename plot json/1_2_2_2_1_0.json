@@ -6,19 +6,19 @@
     "options" : {
         "1" : {
             "text" : "use the key instead to open the door",
-            "next_location" : "",
+            "next_location" : "WON",
             "type" : "winning",
             "item_needed" : "facility_key"
         },
         "2" : {
             "text" : "Break the door open and get in",
-            "next_location" : "",
+            "next_location" : "Question1_2_2_2_1_2_0",
             "type" : "losing",
             "item_needed" : "laser_gun"
         },
         "3" : {
             "text" : "find the key",
-            "next_location" : "",
+            "next_location" : "Question1_2_2_2_3_0",
             "type" : "winning",
             "item_needed" : ""
         }

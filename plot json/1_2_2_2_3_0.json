@@ -1,25 +1,19 @@
 {
-    "Question" : "",
-    "item_pickup" : "",
+    "Question" : "You show up to the storage room and find a facility_key. You've got to go somewhere now to use it. Where will you go?",
+    "item_pickup" : "facility_key",
     "location" : "Question1_2_2_2_3_0",
     "losing" : "",
     "options" : {
         "1" : {
-            "text" : "",
-            "next_location" : "",
-            "type" : "winning/losing",
+            "text" : "go to the time machine or something similar to a science lab",
+            "next_location" : "Question1_2_2_2_1_0",
+            "type" : "winning",
             "item_needed" : ""
         },
         "2" : {
-            "text" : "",
-            "next_location" : "",
-            "type" : "winning/losing",
-            "item_needed" : ""
-        },
-        "3" : {
-            "text" : "",
-            "next_location" : "",
-            "type" : "winning/losing",
+            "text" : "Any place that IS NOT related to the time machine or a science lab",
+            "next_location" : "losing",
+            "type" : "losing",
             "item_needed" : ""
         }
     }
